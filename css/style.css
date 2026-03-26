@@ -1,0 +1,51 @@
+/* Efeito Hero com Overlay */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url("https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=2070&auto=format&fit=crop");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Efeito Parallax */
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cards Modernos */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+}
+
+/* Dashboard Widgets */
+.stat-card {
+    border-left: 5px solid #0d6efd;
+}
+
+/* Responsividade de tabelas */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 2.5rem; }
+    .table-responsive { border: 0; }
+}
+
+footer {
+    margin-top: 80px;
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
